@@ -9,7 +9,7 @@
 .history/
 
 build
-nodu_modules
+node_modules
 npm-debug.log
 
 # Windows thumbnail cache files
