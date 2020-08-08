@@ -26,6 +26,7 @@ $colorActive: #de2b24;
       height: 5px;
       border-radius: 50%;
       background-color: $colorNav;
+      cursor: initial;
     }
 
     &:first-child:before {
@@ -40,13 +41,13 @@ $colorActive: #de2b24;
       bottom: 13px;
       height: 2px;
       width: 0;
-      background-color: $colorActive;
+      background-color: $second;
       transition: all 0.5s;
     }
 
     &:hover,
     &--active {
-      color: $colorActive;
+      color: $second;
 
       &:after {
         opacity: 1;

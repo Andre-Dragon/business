@@ -1,3 +1,5 @@
+$bgYellow: #f8cd53;
+
 .button {
   display: inline-block;
   border-radius: 3px;
@@ -6,23 +8,23 @@
   color: #fff;
 
   &--red {
-    background: #de2b24;
+    background: $second;
     transition: 0.3s;
 
     &:hover {
-      background: lighten(#de2b24, 7%);
+      background: lighten($second, 7%);
     }
   }
 
   &--yellow {
-    background: #f8cd53;
+    background: $bgYellow;
 
     &:hover {
-      background: lighten(#f8cd53, 7%);
+      background: lighten($bgYellow, 7%);
     }
   }
 
-  &--text-uppercase {
+  &__text--uppercase {
     text-transform: uppercase;
   }
 }
