@@ -1,4 +1,21 @@
-body{
-  color: red;
-  background-color: black;
-}
+@charset "UTF-8";
+
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+@import "../../node_modules/reset.scss/reset";
+
+@import "global/fonts";
+@import "global/vars";
+@import "global/variables";
+@import "global/button";
+@import "global/sprite";
+@import "global/mixins";
+@import "global/base";
+@import "global/common";
+
+@import "sections/header";
+@import "sections/nav";
+
+
+
+

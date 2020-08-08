@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+  font-size: 1rem;
+  line-height: 1.2;
+	color: $black;
+}
+
+body {
+	font-family: $ff-main, sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+a {
+	text-decoration: none;
+}
