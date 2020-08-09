@@ -4,6 +4,7 @@
 @import "../../node_modules/normalize.scss/normalize";
 @import "../../node_modules/reset.scss/reset";
 
+//global
 @import "global/fonts";
 @import "global/vars";
 @import "global/variables";
@@ -13,6 +14,7 @@
 @import "global/base";
 @import "global/common";
 
+//sections
 @import "sections/icons";
 @import "sections/title";
 @import "sections/header";
@@ -20,6 +22,7 @@
 @import "sections/hero";
 @import "sections/about";
 @import "sections/approch";
+@import "sections/work";
 
 
 
