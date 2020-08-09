@@ -2,11 +2,23 @@ $bgFacebook: #1287bf;
 $borderColor: #e2e2e2;
 
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
 
   &__top {
     width: 100%;
     height: auto; 
     background-color: $bgBlock;
+  }
+
+  &__bottom {
+    background-color: $white;
+    border-bottom: 2px solid $bgBlock;
   }
 
 }
