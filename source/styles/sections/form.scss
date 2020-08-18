@@ -7,6 +7,10 @@ $colorBorder: #d8d8d8;
   color: $white;
   background-color: $bgForm;
 
+  @media (max-width: 520px) {
+    padding: 90px 0;
+  }
+
   .title {
     margin-bottom: 26px;
   }
@@ -39,6 +43,11 @@ $colorBorder: #d8d8d8;
   text-align: center;
   background-color: $white;
   color: $colorForm;
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+    width: 90%;
+  }
 
   &__container {
     padding-top: 30px;
@@ -106,6 +115,10 @@ $colorBorder: #d8d8d8;
 
     &:focus{
       box-shadow: 0 0 3px 2px $bgForm;
+    }
+
+    @media (max-width: 520px) {
+      width: 100%;
     }
 
   }

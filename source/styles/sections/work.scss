@@ -5,6 +5,10 @@ $bgItem: #f35e59;
   background-color: $second;
   color: $white;
 
+  @media (max-width: 520px) {
+    padding: 90px 0;
+  }
+
   &__list {
     display: flex;
     justify-content: center;

@@ -1,6 +1,5 @@
 .container {
-  max-width: 1024px;
-  margin: auto;
+  @include min-max(320px, 1200px, 15px);
 }
 
 .is-hidden {
