@@ -22,10 +22,12 @@ $colorBorder: #d8d8d8;
     height: 65px;
     border: 2px solid $white;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .arrow__down {
     @include centerer-xy();
+    color: $white;
   }
 
   .arrow-angle-down {
