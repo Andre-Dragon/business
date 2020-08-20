@@ -12,8 +12,9 @@
     //   block: 'start',
     // });
     
-    var heightHeader = document.querySelector('.header').offsetHeight;
-    const topOffset = heightHeader; // 0 если не нужен отступ сверху 
+   
+    const topOffset = document.querySelector('.header').offsetHeight; 
+    //const topOffset = 0; // если не нужен отступ сверху 
     const section = document.querySelector('.' + showedSection);
     const elementPosition = section.getBoundingClientRect().top;
     const offsetPosition = elementPosition - topOffset;
