@@ -84,9 +84,22 @@
       width: 0;
       background-color: $second;
       transition: all 0.5s;
+
+      @media (max-width: 600px) {
+        bottom: 12px;
+      }
     }
 
-    &:hover,
+    &:hover {
+      color: $second;
+
+      &:after {
+        bottom: 4px;
+        opacity: 1;
+        width: 100%;
+      }
+    }
+
     &--active {
       color: $second;
 

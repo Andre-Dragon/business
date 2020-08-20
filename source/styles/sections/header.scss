@@ -105,6 +105,9 @@ $borderColor: #e2e2e2;
 }
 
 .logo {
+  position: relative;
+  z-index: 12;
+
   @media (max-width: 768px) {
     width: 200px;
   }
