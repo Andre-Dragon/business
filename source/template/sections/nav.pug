@@ -1,0 +1,14 @@
+nav.nav
+  .burger__menu
+    .line__menu
+    .line__menu
+    .line__menu
+
+  .nav__menu     
+    - var items = ['Home', 'About Us', 'Our Approch', 'Our Work']
+    - var dataItems = ['hero', 'about', 'approch', 'work']
+      each item, key in items
+        if item === 'Home'
+          a.nav__link.nav__link--active(href="#" data-link=dataItems[key])=item
+        else
+          a.nav__link(href="#" data-link=dataItems[key])=item

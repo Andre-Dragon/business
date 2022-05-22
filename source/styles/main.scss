@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+@import "../../node_modules/reset.scss/reset";
+
+//global
+@import "global/fonts";
+@import "global/vars";
+@import "global/variables";
+@import "global/button";
+@import "global/sprite";
+@import "global/mixins";
+@import "global/base";
+@import "global/common";
+
+//sections
+@import "sections/icons";
+@import "sections/title";
+@import "sections/header";
+@import "sections/nav";
+@import "sections/hero";
+@import "sections/about";
+@import "sections/approch";
+@import "sections/work";
+@import "sections/form";
+@import "sections/footer";
+
+
+
+
+

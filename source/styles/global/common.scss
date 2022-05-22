@@ -1,0 +1,11 @@
+.container {
+  @include min-max(320px, 1200px, 15px);
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.visually-hidden {
+  @include visually-hidden();
+}

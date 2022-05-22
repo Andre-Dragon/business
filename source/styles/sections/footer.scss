@@ -1,0 +1,101 @@
+$bgFooterTop: #2a2a2a;
+$bgFooterGrey: #515151;
+$colorBorder: #515151;
+
+.footer {
+
+  &__top {
+    padding: 120px 0;
+    text-align: center;
+    background-color: $bgFooterTop;
+
+    @media (max-width: 520px) {
+      padding: 90px 0;
+    }
+  }
+
+  &__bottom {
+    padding: 26px 0;
+    text-align: center;
+    background-color: $bgFooterGrey;
+    color: $white;
+    font-size: 0.875rem;
+    letter-spacing: 0.4px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    color: $white;
+    font-size: 1.8125rem;
+    font-family: $ff-main-bold;
+    line-height: 1;
+  }
+
+  &__links {
+    margin-bottom: 30px;
+    color: $white;
+  }
+
+  &__social {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    margin-left: 20px;
+    border: 1px solid $colorBorder;
+    border-radius: 3px;
+    color: $white;
+    transition: all 0.5s;
+    position: relative;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      border-color: $second;
+    }
+
+    .fa {
+      @include centerer-xy();
+    }
+  
+  }
+
+  &__text {
+    margin-bottom: 36px;
+    font-size: 0.875rem;
+    color: $white;
+  }
+
+  &__field {
+    width: 67%;
+    margin: 0 auto 27px;
+    color: $white;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: $bgFooterGrey;
+    color: $white;
+    font-size: 0.875rem;
+  }
+
+  .button {
+    padding: 15px 37px;
+    border: 2px solid $white;
+    font-size: 1.0625rem;
+    font-family: $ff-main-bold;
+    background-color: initial;
+    color: $white;
+    transition: all 0.5s;
+
+    &:hover {
+      border-color: $second;
+    }
+
+  }
+
+}

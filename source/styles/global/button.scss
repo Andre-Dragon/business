@@ -1,0 +1,30 @@
+$bgYellow: #f8cd53;
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px 22px;
+  text-decoration: none;
+  color: #fff;
+
+  &--red {
+    background: $second;
+    transition: 0.3s;
+
+    &:hover {
+      background: lighten($second, 7%);
+    }
+  }
+
+  &--yellow {
+    background: $bgYellow;
+
+    &:hover {
+      background: lighten($bgYellow, 7%);
+    }
+  }
+
+  &__text--uppercase {
+    text-transform: uppercase;
+  }
+}

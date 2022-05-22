@@ -1,0 +1,131 @@
+$bgFacebook: #1287bf;
+$borderColor: #e2e2e2;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  &__top {
+    background-color: $bgBlock;
+    position: relative;
+    z-index: 12;
+  }
+
+  &__bottom {
+    background-color: $white;
+    border-bottom: 2px solid $bgBlock;
+  }
+
+}
+
+.content__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 44px;
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  } 
+}
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  color: $colorText;
+  transition: 0.5s;
+
+  &:hover {
+    color: lighten($colorText, 20%);
+  }
+  
+  &:first-child {
+    padding-right: 18px;
+    border-right: 1px solid $borderColor;
+
+    @media (max-width: 480px) {
+      padding-right: 10px;
+    }
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+  }
+
+  &__icon--email {
+    margin-left: 18px;
+    font-size: 1.3rem;
+
+    @media (max-width: 480px) {
+      margin-left: 10px;
+    }
+  }
+
+  &__text {
+    margin-left: 10px;
+
+    @media (max-width: 480px) {
+      font-size: 0.875rem;
+    }
+  }
+}
+.facebook-icon {
+  margin-left: 14px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: $bgFacebook;
+  color: $white;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: darken($bgFacebook, 15%);
+  }
+}
+.content__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 41px 0;
+
+  @media (max-width: 768px) {
+    padding: 31px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 24px 0;
+  }
+}
+
+.logo {
+  position: relative;
+  z-index: 12;
+
+  @media (max-width: 768px) {
+    width: 200px;
+  }
+
+  @media (max-width: 480px) {
+    width: 160px;
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+}
+
+.header__button {
+  font-family: $ff-main-bold; 
+
+  @media (max-width: 520px) {
+    display: none;
+  }
+}
+

@@ -1,0 +1,162 @@
+$colorShodow: #d6d6d6;
+
+.approch {
+  padding: 120px 0;
+  background-color: $bgBlock;
+
+  @media (max-width: 520px) {
+    padding: 90px 0;
+  }
+
+  &__list {
+    counter-reset: count;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: -1px -1px 10px 1px $colorShodow;
+    background: $white;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      text-align: right;
+
+      .approch__text {
+        padding: 70px 90px 70px 70px;
+
+        @media (max-width: 1024px) {
+          padding: 40px 70px 40px 20px;
+        }
+
+        @media (max-width: 768px) {
+          text-align: center;
+          padding: 20px;
+        }
+      }
+
+      .approch__step {
+        right: auto;
+        left: -51px;
+
+        @media (max-width: 1024px) {
+          left: -41px;
+        }
+
+        @media (max-width: 768px) {
+          left: -32px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__image {
+    flex-shrink: 0;
+    position: relative;
+    max-width: 340px;
+    max-height: 236px;
+
+    @media (max-width: 768px) {
+      max-width: calc(340px / 1.5);
+      max-height: calc(236px / 1.5);
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__step {
+    @include centerer-y();
+
+    right: -51px;
+    width: 103px;
+    height: 103px;
+    padding-top: 10px;
+    border-radius: 5px;
+    border: 2px solid $white;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: $second;
+    color: $white;
+
+    &:before {  
+      content: counter(count);
+      counter-increment: count;
+      display: block;
+      font-family: $ff-steps;
+      font-size: 3rem;
+      line-height: 1;
+      color: $white;
+
+      @media (max-width: 1024px) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      right: -41px;
+      width: 83px;
+      height: 83px;
+    }
+
+    @media (max-width: 768px) {
+      right: -32px;
+      width: 63px;
+      height: 63px;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: top;
+    width: 64%;
+    padding: 70px 70px 70px 90px;
+    font-size: 0.875rem;
+
+    @media (max-width: 1024px) {
+      padding: 40px 20px 40px 70px;
+    }
+
+    @media (max-width: 768px) {
+      width: 80%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 520px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-family: $ff-main-bold;
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+
+}
