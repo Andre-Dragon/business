@@ -41,9 +41,12 @@
     const requiredFields = document.querySelectorAll('[data-valid="required"]');
     const emailValue = document.querySelector('[data-email]').value;
     const numberValue = document.querySelector('[data-number]').value;
+    const formInput = document.querySelector('.form__input');
+    
 
     if (!me.isAllCompleted(requiredFields)) {
       console.log('Заполните все необходимые поля');
+      formInput.style.borderColor = 'red';
       return false;
 
     } else if (!BUSINESS.validation.isEmail(emailValue)) {
